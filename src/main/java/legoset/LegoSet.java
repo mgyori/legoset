@@ -1,15 +1,9 @@
 package legoset;
 
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import java.time.Year;
-
-import javax.xml.bind.annotation.XmlAccessType;
 
 import lombok.Data;
 
@@ -18,6 +12,9 @@ import lombok.Data;
 @XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "weight", "url"})
 @Data
 public class LegoSet {
+	@XmlAttribute
+	private String number;
+
 	private String name;
 	private String theme;
 	private String subtheme;

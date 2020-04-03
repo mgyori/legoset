@@ -13,6 +13,7 @@ import javax.xml.bind.Marshaller;
 public class Main {
 	public static void main(String[] args) {
 		LegoSet set = new LegoSet();
+		set.setNumber("75211");
 		set.setName("Imperial TIE Fighter");
 		set.setTheme("Star Wars");
 		set.setSubtheme("Solo");
