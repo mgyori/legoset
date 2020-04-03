@@ -2,7 +2,7 @@ package legoset;
 
 import java.time.Year;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -15,9 +15,10 @@ public class Main {
 		LegoSet set = new LegoSet();
 		set.setName("Imperial TIE Fighter");
 		set.setTheme("Star Wars");
+		set.setSubtheme("Solo");
 		set.setYear(Year.parse("2018"));
 		set.setPieces(519);
-		Set<String> tags = new HashSet<String>();
+		Set<String> tags = new LinkedHashSet<String>();
 		tags.add("Starfighter");
 		tags.add("Stormtrooper");
 		tags.add("Star Wars");
